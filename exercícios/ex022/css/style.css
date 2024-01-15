@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.retangulo{
+    display: inline-block;
+    width: 96%;
+    height: 300px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.quadrado{
+    display: inline-block;
+    width: 32%;
+    height: 300px;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
