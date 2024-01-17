@@ -1,8 +1,25 @@
 body{
-    background-image: url('../imagens/wallpaper002.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+
     height: 100vh;
+    /* background-color: black;
+    background-image: url('../imagens/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    
+
+    background: black url('../imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
+
+
+    /* SHORTHAN DE BACKGROUND */
+
+    /* 
+        color > image > position > repeat > [size] > attachtment
+
+    * O [size] NÃO FUNCIONA NA SHORTHAND / DECLARAR SEPARADO
+    */
 }
 
 
@@ -10,9 +27,9 @@ body{
 .quadrado{
     width: 90%;
     height: 300px;
-    background-color: white;
+    background-color: rgb(188, 188, 188);
 
     border: 2px solid black;
     border-radius: 10px;
-    margin: auto;
+    margin: 30px auto;
 }
