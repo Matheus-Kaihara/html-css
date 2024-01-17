@@ -1,0 +1,22 @@
+.container{
+    position: relative;
+    height: 96vh;
+
+    background: gray url('../imagens/target001.png') center center no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.content{
+    position: absolute;
+
+    background: cyan url('../imagens/target001.png') center center no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
