@@ -88,6 +88,14 @@ section.image-verse > pre{
     
 }
 
+section.image-verse #img1{
+    background-image: url(../imagens/background001.jpg);
+}
+
+section.image-verse #img2{
+    background-image: url(../imagens/background002.jpg);
+}
+
 
 /* ---------- FOOTER ---------- */
 
