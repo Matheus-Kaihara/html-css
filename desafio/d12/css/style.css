@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* BODY */
+
+body{
+    background-color: burlywood;
+    
+}
+
+
+/* SECTION */
+
+section > pre{
+    white-space: pre-line;
+}
