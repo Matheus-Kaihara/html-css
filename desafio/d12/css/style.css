@@ -5,11 +5,25 @@
     padding: 0;
 }
 
+/* FONTS  */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif; 
+    --font2: 'Passion One', sans-serif;
+    --font3: 'Sriracha', cursive;
+}
+
+
 /* ---------- BODY ---------- */
 
 body{
     min-width: 100vh;
     background-color: burlywood;
+    font-family: var(--font1);
 }
 
 
@@ -50,11 +64,12 @@ header a:hover, footer a:hover{
 section{
     padding: 10vh 0 10vh 5%;
     line-height: 1.5em;
-    font-size: 2rem;
+    font-size: 2rem;    
 }
 
 section > pre{
     white-space: pre-line;
+    font-family: var(--font3);
 }
 
 section.normal-verse{
@@ -66,8 +81,10 @@ section.image-verse{
 }
 
 section.image-verse > pre{
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.649);
-    width: fit-content;
+    color: rgb(201, 201, 201);
+    padding: 1%;
     
 }
 
