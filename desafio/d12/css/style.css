@@ -1,15 +1,87 @@
 @charset "UTF-8";
 
-/* BODY */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- BODY ---------- */
 
 body{
+    min-width: 100vh;
     background-color: burlywood;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 5%;
+}
+
+header > h1{
+    font-variant: small-caps;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+header > p{
+    font-size: 1.5rem;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* ---------- SECTION ---------- */
+
+section{
+    padding: 10vh 0 10vh 5%;
+    line-height: 1.5em;
+    font-size: 2rem;
+}
+
+section > pre{
+    white-space: pre-line;
+}
+
+section.normal-verse{
+    background-color: white;
+}
+
+section.image-verse{
+    background-color: gray;
+}
+
+section.image-verse > pre{
+    background-color: rgba(0, 0, 0, 0.649);
+    width: fit-content;
     
 }
 
 
-/* SECTION */
+/* ---------- FOOTER ---------- */
 
-section > pre{
-    white-space: pre-line;
+footer{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 1%;
+}
+
+footer p{
+    font-size: 1.2rem;
 }
