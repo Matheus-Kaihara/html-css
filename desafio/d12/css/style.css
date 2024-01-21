@@ -78,6 +78,9 @@ section.normal-verse{
 
 section.image-verse{
     background-color: gray;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.451);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.image-verse > pre{
@@ -85,15 +88,22 @@ section.image-verse > pre{
     background-color: rgba(0, 0, 0, 0.649);
     color: rgb(201, 201, 201);
     padding: 1%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 0 black;
+    
     
 }
 
-section.image-verse #img1{
+section.image-verse#img1{
     background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+
 }
 
-section.image-verse #img2{
+section.image-verse#img2{
     background-image: url(../imagens/background002.jpg);
+    
+
 }
 
 
