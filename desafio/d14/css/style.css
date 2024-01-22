@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+table{
+    width: 40%;
+    margin: 3% auto;
+    border-collapse: collapse;
+}
+
+caption{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+thead, tfoot{
+    background-color: gray;
+    color: white;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 1%;
+    vertical-align: middle;
+}
+
+
+
+
+
