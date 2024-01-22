@@ -1,0 +1,22 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+table{
+    width: 30%;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 3%;
+
+    vertical-align: middle;
+    text-align: center;
+}
