@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 1%;
+
+    text-align: center;
+    vertical-align: middle;
+}
