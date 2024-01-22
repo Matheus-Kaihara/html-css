@@ -35,6 +35,16 @@ th, td{
     vertical-align: middle;
 }
 
+.col-notas1{
+    background-color: aqua;
+}
+.col-notas2{
+    background-color: red;
+}
+
+div{
+    overflow-x: scroll;
+}
 
 
 
