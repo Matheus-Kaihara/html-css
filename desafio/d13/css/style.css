@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+h1{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+}
+
+table{
+    margin-top: 3%;
+    width: 40%;
+}
+
+caption{
+    background-color: gray;
+    color: white;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3%;
+}
+
+footer{
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    font-weight: bold;
+
+}
