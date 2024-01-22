@@ -47,7 +47,7 @@ header > p{
     font-size: 1.5rem;
 }
 
-header a, footer a{
+header a, footer a, section a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -64,12 +64,13 @@ header a:hover, footer a:hover{
 section{
     padding: 10vh 0 10vh 5%;
     line-height: 1.5em;
-    font-size: 2rem;    
+    font-size: 1.8rem;    
 }
 
-section > pre{
+section > pre, section p{
     white-space: pre-line;
     font-family: var(--font3);
+    padding-bottom: 2%;
 }
 
 section.normal-verse{
@@ -78,7 +79,7 @@ section.normal-verse{
 
 section.image-verse{
     background-color: gray;
-    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.451);
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.653);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -90,7 +91,6 @@ section.image-verse > pre{
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.6);
     text-shadow: 1px 1px 0 black;
-    
     
 }
 
