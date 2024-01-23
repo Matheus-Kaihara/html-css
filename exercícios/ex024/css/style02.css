@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 2%;
+}
+
+p, ul{
+    padding: 2%;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 90vw;
+    height: 300px;
+}
