@@ -24,7 +24,23 @@
         <li><a href="../ex023/tabela02.html" target="iframe">Terceiro site</a></li>
     </ul>
     
-    <iframe name="iframe" frameborder="0">
+
+    <!-- 
+        ----- SEGURANÇA -----
+
+        Para fins de segurança, os IFRAMES devem ser configurados corretamente para que sites externos não consigam coletar dados dos usuários através so IFRAME do seu site.
+
+        Para realizar essa medida de segurança, usa-se:
+
+        -> sandbox=""
+            - sandbox = bloqueia que outros sites acessem o seu site através do IFRAME
+            - allow-same-origin = permite que sites da mesma origem acessem o seu site através do IFRAME
+
+        -> referrerpolicy=""
+            - no-referrer = bloqueia que os dados de navegação sejam coletados
+     -->
+    
+    <iframe name="iframe" sandbox="sandbox" referrerpolicy="no-referrer">
         <p>Seu dispositivo não é compatível</p>
     </iframe>
     
