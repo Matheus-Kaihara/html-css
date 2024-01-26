@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style08.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários de Select, DataList e TextArea</h1>
+
+    <form autocomplete="off" action="cadastro.php" method="post">
+
+        <!--
+            DIFERENÇA ENTRE SELECT E DATALIST
+
+            Ambos INPUTs são selecionávéis de acordo com as opções inseridas. Porém, o DATALIST permite que você insira um texto no formulário caso não haja uma opção de acordo com o que você deseja escolher
+         -->
+        
+        <!-- O FIELDSET agrupa um conjunto de formulários -->
+        <fieldset>
+
+            <legend>Escolha seu Estado</legend>
+
+            <label for="id_estado">Estado</label>
+            <select name="estado" id="id_estado">
+                <option value="" selected>---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="es">Espírito Santo</option>
+                </optgroup>
+
+            </select>
+            
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Escolha sua profissão</legend>
+
+            <label for="id_profissao">Profissão</label>
+            <input type="text" name="profissao" id="id_profissao" list="list_profissoes">
+            <datalist id="list_profissoes">
+                <option value="adm">Administrador</option>
+                <option value="cont">Contabilista</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+            </datalist>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Insira sua mensagem</legend>
+
+            <label for="id_mensagem">Mensagem</label>
+            <br>
+            <textarea name="mensagem" id="id_mensagem" cols="30" rows="10"> </textarea>
+        </fieldset>
+
+
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
