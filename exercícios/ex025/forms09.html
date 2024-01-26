@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style08.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários de Output</h1>
+
+    <form autocomplete="on" action="cadastro.php" method="get">
+        
+            <!-- O OUTPUT NÃO É PARA ENVIAR DADAOS, APENAS PARA MOSTRAR ALGO -->
+            <!-- 
+                O OUTPUT É APENAS PARA PROGRAMAÇÃO 
+
+                - Mostrar a idade de acordo com a idade que nasceu
+                - Mostrar o valor de um input do Range
+            -->
+    
+
+            <legend>Soma</legend>
+
+            <label for="idnumero1">Número 1</label>
+            <input type="number" name="numero1" id="idnumero1" required min="0" max="100" oninput="idsoma.innerHTML = Number(idnumero1.value) + Number(idnumero2.value)">
+            
+            <br>
+
+            <label for="idnumero2">Número 2</label>
+            <input type="number" name="numero2" id="idnumero2" required min="0" max="100" oninput="idsoma.innerHTML = Number(idnumero1.value) + Number(idnumero2.value)">
+
+            <br>
+
+            <label for="idsoma">Soma = </label>
+            <output name="soma" id="idsoma"> 0 </output>
+
+        
+
+            <legend>Subtração</legend>
+
+            <label for="idnumero3">Número 1</label>
+            <input type="range" name="numero3" id="idnumero3" required min="0" max="10" oninput="idsub.innerHTML = Number(idnumero3.value) - Number(idnumero4.value)">
+            
+            <br>
+
+            <label for="idnumero4">Número 2</label>
+            <input type="range" name="numero4" id="idnumero4" required min="0" max="10" oninput="idsub.innerHTML = Number(idnumero3.value) - Number(idnumero4.value)">
+
+            <br>
+
+            <label for="idsub">Subtração = </label>
+            <output name="sub" id="idsub"> 0 </output>
+
+            <br>
+
+
+
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
