@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style05.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários de Telefone e Email</h1>
+
+    <form autocomplete="off" action="cadastro.php" method="post">
+
+        
+        <!-- O FIELDSET agrupa um conjunto de formulários -->
+        <fieldset>
+
+            <legend>Dados cadastrais</legend>
+
+
+            <label for="id_email">Email</label>
+            <input type="email" name="email" id="id_email" autocomplete="email" required>
+            <br>
+            <label for="id_telefone">Telefone</label>
+            <input type="tel" name="telefone" id="id_telefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"  placeholder="(xx)xxxxx-xxxx" required>
+            <!--
+                -- PATERNS: Expressões Regulares --
+                - Para tel: pattern="^[0-9]{4}-[0-9]{4}$"
+                - Para cel DDD: pattern="^\(d{2}\)\d{4,5}-\d{4}$"
+             -->
+            <!-- ESTUDAR SOBRE 'RegEx' - Regular Expressions -->
+            
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
