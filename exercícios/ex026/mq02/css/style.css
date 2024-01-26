@@ -5,8 +5,23 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    background-size: contain;
+}
+
+h1, p{
+    color: white;
+    text-shadow: 2px 2px 1px rgba(201, 201, 201, 0.404);
+
     text-align: center;
+    padding: 1%;
 }
