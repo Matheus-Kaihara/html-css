@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style07.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários de Color, Range e File</h1>
+
+    <form autocomplete="off" action="cadastro.php" method="post">
+
+        
+        <!-- O FIELDSET agrupa um conjunto de formulários -->
+        <fieldset>
+
+            <legend>Escolha a cor</legend>
+
+            <label for="id_cor">Cor</label>
+            <input type="color" name="cor" id="id_cor">
+            
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Nível de Satisfação</legend>
+            
+            <label for="id_avaliacao">Avaliação</label>
+            <input type="range" name="avaliacao" id="id_avaliacao" min="1" max="5">
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Insira a foto</legend>
+
+            <!-- PARA CONTROLE DE ARQUIVOS, É NECESSÁRIO QUE O MÉTODO SEJA 'POST' -->
+            <!-- ISSO SE DÁ POIS ARQUIVOS EM SUMA POSSUEM MAIS DO QUE 3000 BYTES -->
+
+            <label for="id_foto">Foto</label>
+            <input type="file" name="foto" id="id_foto">
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
