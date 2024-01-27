@@ -66,9 +66,10 @@ menu > ul > li:hover{
 
 article{
     background-color: white;
-
+    width: 95vw;
     border-radius: 5px;
-    margin: 2%;
+    margin: auto;
+    margin-top: 2%;
     padding: 4%;
 }
 
